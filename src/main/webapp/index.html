@@ -10,13 +10,14 @@
 <form action="survey" method="post" class="survey-form">
     <!-- Logo Murach -->
     <img src="images/murachlogo.jpg" alt="Murach Logo" class="logo">
+    <!--đường dẫn tương đối (not tuyệt đối), hình ảnh nằm trong root của webapps-->
 
     <h1>Survey</h1>
     <p>If you have a moment, we'd appreciate it if you would fill out this survey.</p>
 
     <h2>Your information:</h2>
     <label for="firstName">First Name</label>
-    <input type="text" id="firstName" name="firstName" required>
+    <input type="text" id="firstName" name="firstName"> <!--required: yêu cầu bắt buộc nhập dữ liệu-->
 
     <label for="lastName">Last Name</label>
     <input type="text" id="lastName" name="lastName" required>
@@ -31,7 +32,7 @@
     <div class="radio-group">
         <input type="radio" name="heardFrom" value="Search Engine" id="searchEngine" checked>
         <label for="searchEngine">Search engine</label>
-        <input type="radio" name="heardFrom" value="Friend" id="friend">
+        <input type="radio" name="heardFrom" value="Friend" id="friend"> <!--checkbox, radio button-->
         <label for="friend">Word of mouth</label>
         <input type="radio" name="heardFrom" value="Social Media" id="socialMedia">
         <label for="socialMedia">Social Media</label>
@@ -52,6 +53,7 @@
             <option value="Both" selected>Email or postal mail</option>
             <option value="Email">Email only</option>
             <option value="Postal Mail">Postal mail only</option>
+            <!--ĐỂ CHỌN 2 THẺ TRONG 3 THÌ PHẢI SỬA QUA ĐÂU-->
         </select>
     </p>
 
